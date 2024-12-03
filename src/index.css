@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+* {
+  @apply overflow-x-hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+pre {
+  font-family: "Seoge UI", "Segoe UI Emoji";
+  animation: fadein 0.7s;
+}
+
+div * {
+  animation: fadein 0.7s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 100;
+    transform: translateY(0);
+    filter: blur(0px);
+  }
+}
+
+* {
+  overflow: auto;
+  scrollbar-width: none; /* For Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
